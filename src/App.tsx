@@ -13,10 +13,8 @@ import { PauseIcon, PlayIcon, ResetIcon } from "./Icons";
 
 function App() {
   return (
-    <div className="w-full h-full grid grid-cols-[15%_1fr_15%] gap-1 justify-center items-center p-2">
-      <TeamScore />
+    <div className="w-full h-full -grid -grid-cols-[15%_1fr_15%] gap-0.5 justify-center items-center p-2">
       <Timer />
-      <TeamScore />
     </div>
   );
 }
@@ -102,11 +100,11 @@ function TimerInternal({
   return (
     <div className="grid grid-rows-[30%_1fr] h-full w-full">
       <div />
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-0.5">
         <El
           onClick={() => status === "STOPPED" && setEditing(true)}
           className={cn(
-            "text-6xl bg-neutral-200 rounded font-black w-full text-center",
+            "font-sans text-8xl tracking-tighter bg-neutral-200 rounded font-black w-full text-center",
             editing
               ? "text-black"
               : Number(duration.minutes ?? 0) < 1

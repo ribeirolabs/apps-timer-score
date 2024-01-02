@@ -16,3 +16,9 @@
     @apply w-3;
   }
 }
+
+@layer utilities {
+  gap-1 {
+    gap: 0.15em;
+  }
+}
