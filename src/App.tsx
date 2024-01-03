@@ -110,7 +110,7 @@ function TimerInternal({
               : Number(duration.minutes ?? 0) < 1
               ? "text-red-500"
               : Number(duration.minutes ?? 0) < 4
-              ? "text-yellow-400"
+              ? "text-yellow-800"
               : null
           )}
         >
